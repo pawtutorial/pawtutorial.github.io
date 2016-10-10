@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>New Age - Start Bootstrap Theme</title>
+    <title>Paw Project</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
 
     <!-- Theme CSS -->
-    <link href="css/new-age.min.css" rel="stylesheet">
+    <link href="css/new-age.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,20 +45,32 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Start</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#features">App Setup</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#features">Features</a>
+                        <a class="page-scroll" href="#permissions">Permissions</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#setup">Setup</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#fundamentals">Fundamentals</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#first-call">First Api Call</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#post-product">Post a Product</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#wrap-up">Wrap Up</a>
                     </li>
                 </ul>
             </div>
@@ -68,57 +80,63 @@
     </nav>
 
     <header>
+        <br><br>
         <div class="container">
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-lg-6">
                     <div class="header-content">
-                        <div class="header-content-inner">
-                            <h1>New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
+                        <div class="header-content-inner"><br><br>
+                            <h1>Want to quickly learn how to make API calls to your Shopify Store? It's actually super easy!</h1><br>
+                            <h1>We'll walk you through everything you need to start right away.</h1><br>
+                            <a href="#paw-setup" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-5">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt="">
-                                </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                <div class="col-lg-6">
+                    <div class="header-content">
+                        <div class="header-content-inner"><br><br>
+                            
+                                <img src="img/apps-graphic.png" class="img-responsive">
+                                    
+                                    
+                            
+                                
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            
+        
     </header>
 
-    <section id="download" class="download bg-primary text-center">
+    <!-- Setting up Paw-->
+
+    <section id="paw-setup" class="paw-setup bg-primary text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Discover what all the buzz is about!</h2>
-                    <p>Our app is available on any mobile device! Download now to get started!</p>
+                    <h2 class="section-heading">We are going to use a very cool http client called Paw</h2>
+                    <p>Click below to download Paw now!</p>
                     <div class="badges">
-                        <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-                        <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+                        <a class="badge-link" onclick="window.open('https://paw.cloud/');" href="#features"><img src="img/paw.png"></a>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Creating Private App-->
+
     <section id="features" class="features">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
-                        <h2>Unlimited Features, Unlimited Fun</h2>
-                        <p class="text-muted">Check out what you can do with this app theme!</p>
+                        <h2>After installing Paw, you will want to make sure you have your API credentials from your Shopify store.</h2>
+                        <p class="text-muted" class="img-responsive">Click <a href="https://www.shopify.com/login" target="_blank"><img style="max-width: 40px; max-height: 50px;" src="img/shopify-bag.png"></a> to login to your Shopify account</p>
                         <hr>
                     </div>
                 </div>
@@ -126,33 +144,43 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
+                        <h4 style="text-align: center;">Can't See? Zoom in!</h4>
+                        <div class="device-mockup imac">
                             <div class="device">
                                 <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                    
+                                    <img class="img-responsive" style="height: 100%;" src="img/screencast-create.gif"> 
+
                                 </div>
+
+                                
                             </div>
+
+ 
                         </div>
+                        
+                        
                     </div>
                 </div>
+
+
+
+
                 <div class="col-md-8">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="feature-item">
                                     <i class="icon-screen-smartphone text-primary"></i>
-                                    <h3>Device Mockups</h3>
-                                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                                    
+                                    <h3>1. Then go to Apps</h3>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="feature-item">
                                     <i class="icon-camera text-primary"></i>
-                                    <h3>Flexible Use</h3>
-                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                                    
+                                    <h3>2. Then Private Apps</h3>
                                 </div>
                             </div>
                         </div>
@@ -160,15 +188,15 @@
                             <div class="col-md-6">
                                 <div class="feature-item">
                                     <i class="icon-present text-primary"></i>
-                                    <h3>Free to Use</h3>
-                                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                                    
+                                    <h3>3. Create a new private app</h3>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="feature-item">
                                     <i class="icon-lock-open text-primary"></i>
-                                    <h3>Open Source</h3>
-                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                                    
+                                    <h3>4. And call it whatever you'd like!</h3>
                                 </div>
                             </div>
                         </div>
@@ -177,47 +205,403 @@
             </div>
     </section>
 
-    <section class="cta">
-        <div class="cta-content">
-            <div class="container">
-                <h2>Stop waiting.<br>Start building.</h2>
-                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
+<!-- Permissions-->
+
+     <section id="permissions" class="permissions bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>Great, now that you have your API credentials, lets pop them into PAW</h2>
+                        <h4> But before we can do that, we have to make sure that the API endpoint we are hitting is setup with the right permissions.</h4>
+                    
+
+                        <hr><br>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="overlay"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="device-container">
+                        
+                        <div class="device-mockup imac img-responsive">
+                            <div class="device">
+                                <div class="screen">
+                                    
+                                    <img class="img-responsive" style="height: 100%" src="img/screencast-permissions.gif"> </div>
+                            </div>
+
+
+                        </div>
+
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-6">
+                    <div class="instructions-container" style="margin-top: 10px;">
+                    <ul style="font-size: 18px;">
+                            <li>Let's go down to where it says Products, Variants and collections and turn change that from "Read Access" to "Read and Write Access"</li><br>
+                            <li>Let's also go ahead and do the same thing for Orders, transactions and fulfillments</li>
+                        </ul>
+
+                        <hr><br>
+                        <ul style="font-size: 18px;">
+                            <li>Great! Now lets grab them and put them into Paw. </li><br>
+                            <li>You will see that the Paw UI has four settings on the main page: Headers, URL Params, Body and Options. For this tutorial, we will start with Header, which should be already selected.</li><br>
+                            <li>Under Header Name, we will put the word 'Authorization' and the value will be 'Http Basic Auth'</li><br>
+                            <li>Then underneath, we will put the name 'Accept' with the value 'application/json'. Under that we will put the name 'Content-Type' and toss in the 'application/json' value again.</li>
+                        </ul>
+
+               </div>
+            </div>
+                    
+                
+
+                
+                
     </section>
 
-    <section id="contact" class="contact bg-primary">
+<!-- Paw Setup-->
+
+    <section id="setup" class="setup">
         <div class="container">
-            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
-            <ul class="list-inline list-social">
-                <li class="social-twitter">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li class="social-facebook">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="social-google-plus">
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                </li>
-            </ul>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>Awesome! Now lets add the settings in Paw</h2>
+                        
+                    
+
+                        <hr><br><br>
+                    </div>
+                </div>
+            </div>
+            
+
+                <div class="col-md-6">
+                    <div class="instructions-container" style="margin-top: 10px;">
+                    
+                            
+                        <ul style="font-size: 18px;">
+                        
+                            <li>You will see that the Paw UI has four settings on the main page: Headers, URL Params, Body and Options. For this tutorial, we will start with Header, which should be already selected.</li><br>
+                            <li>Under Header Name, we will put the word 'Authorization' and the value will be 'Http Basic Auth'</li><br>
+                            <li>Then underneath, we will put the name 'Accept' with the value 'application/json'. Under that we will put the name 'Content-Type' and toss in the 'application/json' value again.</li>
+                        </ul>
+
+               </div>
+            </div>
+                    
+                <div class="row">
+                <div class="col-md-6">
+                    <div class="device-container">
+                        
+                        <div class="device-mockup imac img-responsive">
+                            <div class="device">
+                                <div class="screen">
+                                    
+                                    <img class="img-responsive" style="height: 100%" src="img/screencast-pawsettings.gif"> </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                
+                
+    </section>
+
+
+    <!-- Add Creds-->
+
+    <section id="adding-creds" class="adding-creds bg-fourth">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>Great, let's add our store's credentials to HTTP Basic Auth Header Value</h2>
+                        
+                    
+
+                        <hr><br>
+                    </div>
+                </div>
+            </div>
+                    
+                <div class="row">
+                <div class="col-md-6">
+                    <div class="device-container">
+                        
+                        <div class="device-mockup imac img-responsive">
+                            <div class="device">
+                                <div class="screen">
+                                    
+                                    <img class="img-responsive" style="height: 100%" src="img/screencast-apicreds.gif"> </div>
+                            </div>
+
+
+                        </div>
+
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-6">
+                    <div class="instructions-container" style="margin-top: 10px;">
+                    
+                            
+                        <ul style="font-size: 18px;">
+                        
+                            <li>Go ahead and click on the HTTP Basic Auth value that you set. </li><br>
+                            <li>A modal will popup with a username and password.</li><br>
+                            <li>You'll want to grab you're credentials from the private app you created and pop them in. If you get stuck, check out the video.</li>
+                        </ul>
+
+               </div>
+            </div>
+                
+    </section>
+
+               
+
+<!-- Fundamentals-->
+
+<section id="fundamentals" class="Fundamentals bg-third">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>You're Amazing! Ready to make your first API call?</h2>
+                        <h3>When using the Shopify API, generally you will be using four methods</h3>
+                        <hr><br><br>
+                        
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                
+                    <p>GET - Use this to grab info from your store using the API.</p>
+                    <p>POST - This will be to push info to your store using the API.</p>
+                    <p>PUT - Used for editing data.</p>
+                    <p>DELETE - Exactly what it sounds like.</p>
+                           
+                         </div>
+                      </div>
+                    </div>
+                 </div>
+               </div>
+            </div>
+
+    </section>
+
+<!-- First API Call-->
+
+<section id="first-call" class="first-call">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>Sweet! Let's make an API call</h2>
+                        <h3>We are going to make a simple call that will grab all products in your store and return back the orders and all of their properties.
+                        
+                    
+
+                        <hr><br>
+                    </div>
+                </div>
+            </div>
+            
+
+                <div class="col-md-6">
+                    <div class="instructions-container" style="margin-top: 10px;">
+                    
+                            
+                        <ol style="font-size: 18px;">
+                        
+                            <li>Grab your store name (with the https:// infront of it)</li><br>
+                            <li>Pop it into the top field where it says 'Get'</li><br>
+                            <li>We are then going to add a slash to the end of the URL and add: admin/orders.json. In the end, the URL should look something like this - https://yourstore.myshopify.com/admin/orders.json</li><br>
+                            <li>Hit Enter!</li>
+                        </ol>
+
+               </div>
+            </div>
+                    
+                <div class="row">
+                <div class="col-md-6">
+                    <div class="device-container">
+                        
+                        <div class="device-mockup imac img-responsive">
+                            <div class="device">
+                                <div class="screen">
+                                    
+                                    <img class="img-responsive" style="height: 100%" src="img/screencast-apicall.gif"> </div>
+                            </div>
+
+
+                        </div>
+
+                        
+                    </div>
+                    
+                </div>
+
+                
+                
+    </section>
+
+
+<!-- Recap-->
+
+ <section class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h1>Fantastic! If you got a repsonse of <strong style="color: #95BE46;">200</strong>, you're good to go!</h1><br>
+                            <h1>Now take your time going through the righthand side of the screen to go through the properties of the orders you pulled</h1><br>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            
+                                <img src="img/Pawresponse.png" style="border-radius: 0px 0px 0px 0px;
+-moz-border-radius: 0px 0px 0px 0px;
+-webkit-border-radius: 0px 0px 0px 0px;
+border: 0px solid #000000;-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);" class="img-responsive">
+                                    
+                                    
+                            
+                                
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        
+    </section>
+
+<!-- POST Product-->
+
+    <section id="post-product" class="post-product bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>Great, now that we were able to grab information, lets try pushing some to our store</h2>
+                        <h4> We are going to use the POST method to push data to our store using this endpoint: /admin/products.json</h4>
+                    
+
+                        <hr><br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="device-container">
+                        
+                        <div class="device-mockup imac img-responsive">
+                            <div class="device">
+                                <div class="screen">
+                                    
+                                    <img class="img-responsive" style="height: 100%" src="img/screencast-post.gif"> </div>
+                            </div>
+
+
+                        </div>
+
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-6">
+                    <div class="instructions-container" style="margin-top: 10px;">
+                    <ul style="font-size: 18px;">
+                            <li>Go ahead and copy and paste that enpoint into the URL field and make sure it is at the end of your store name.</li><br>
+                            <li>Then change the method to POST instead of GET</li>
+                        </ul>
+
+                        <hr><br>
+                        <ul style="font-size: 18px;">
+                            <li>You will then see one of the options below called "body". </li><br>
+                            <li>Let's click on that and grab some info to create a product on our store</li><br>
+                            <li>Go ahead and grab some dummy data from our API reference <a href="https://help.shopify.com/api/reference/product#create" target="_blank">here</a>.</li><br>
+                            <li>Then copy that data and paste it into the body field.</li>
+                        </ul>
+
+               </div>
+            </div>
+                    
+                
+
+                
+                
+    </section>
+
+
+<!-- Post Recap-->
+
+<section id="paw-started" class="paw-started bg-third">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>Amazing!</h2>
+                        <h3>If all went well and we received a <strong style="color: #95BE46;">201</strong> response, you will have a new product on your store. </h3>
+                        <hr><br><br>
+                        
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                
+                    
+                           
+                         </div>
+                      </div>
+                    </div>
+                 </div>
+               </div>
+            </div>
+
+    </section>
+
+    <!-- Wrap Up-->
+
+    <section id="wrap-up" class="wrap-up bg-primary text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>That wasn't so hard was it?</h2>
+
+                    <h2 class="section-heading">There are lots of other cool things you can do with the Shopify API. To learn more, check out our docs <a href="https://help.shopify.com/api/reference" style="color: white;" target="_blank">here</a>.</h2>
+                    
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    
 
     <footer>
         <div class="container">
-            <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
-            <ul class="list-inline">
-                <li>
-                    <a href="#">Privacy</a>
-                </li>
-                <li>
-                    <a href="#">Terms</a>
-                </li>
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-            </ul>
+            <div class="badges">
+                        
+                        <p style="font-size: 18px; color: white;"><img class="badge-link" src="img/slack.png" class="img-responsive" style="max-height: 35px; max-width: 35px; text-align: center;">    @oren</p>
+                    </div>
         </div>
     </footer>
 
@@ -232,6 +616,9 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
+    
+    
+    
 
 </body>
 
